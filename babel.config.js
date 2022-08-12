@@ -12,6 +12,7 @@ module.exports = {
           '@redux': './src/redux/',
           '@i18n': './src/i18n/',
           '@config': './src/config/',
+          '@features': './src/features/',
           '@navigation': './src/navigation/',
           '@types': './src/types/',
           '@utils': './src/utils/',

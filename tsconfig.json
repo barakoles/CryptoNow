@@ -6,6 +6,7 @@
       "@components/*": ["src/shared/components/*"],
       "@hooks/*": ["src/hooks/*"],
       "@navigation/*": ["src/navigation/*"],
+      "@features/*": ["src/features/*"],
       "@types/*": ["src/types/*"],
       "@config/*": ["src/config/*"],
       "@utils/*": ["src/utils/*"],
