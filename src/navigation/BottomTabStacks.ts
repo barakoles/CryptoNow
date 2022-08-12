@@ -1,6 +1,6 @@
 import { LayoutBottomTabs } from 'react-native-navigation';
 import { Screens } from './Screens';
-
+// import Icon from 'react-native-vector-icons/Ionicons';
 export enum BottomTabStacksIDs {
   BOTTOM_TABS_LAYOUT = 'BottomTabsLayout',
 }
@@ -21,7 +21,10 @@ export const BottomTabStacks: LayoutBottomTabs = {
         ],
         options: {
           bottomTab: {
-            //   icon: require('./home.png'),
+            text: 'Assets',
+            selectedIconColor: '#6C8AFF',
+            iconColor: '#C4D0FF',
+            icon: require('../assets/images/coin.png'),
           },
         },
       },
@@ -39,7 +42,11 @@ export const BottomTabStacks: LayoutBottomTabs = {
         ],
         options: {
           bottomTab: {
-            //   icon: require('./profile.png'),
+            text: 'Favorites',
+            selectedIconColor: '#6C8AFF',
+
+            iconColor: '#C4D0FF',
+            icon: require('../assets/images/love.png'),
           },
         },
       },

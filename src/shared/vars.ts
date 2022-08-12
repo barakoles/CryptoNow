@@ -15,6 +15,7 @@ export enum fontWeights {
   bold = '700',
 }
 export const marginSizes = {
+  huge: baseSize * 3,
   mega: baseSize * 2,
   big: baseSize * 1.6,
   base: baseSize * 1.2,
@@ -39,4 +40,7 @@ export const themeColors = {
 };
 export const borderRadius = 8;
 
-export const fontFamilies = {};
+export const fontFamilies = {
+  bold: 'ProximaNova-Bold',
+  regular: 'ProximaNova-Regular',
+};
