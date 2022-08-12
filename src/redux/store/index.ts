@@ -34,7 +34,7 @@ redux.middlewares?.push(logger);
 const persistConfig = {
   key: 'async-storage',
   storage: AsyncStorage,
-  whitelist: ['app'],
+  whitelist: ['app', 'favorites'],
 };
 
 export const store = init<RootModel, FullModel>({

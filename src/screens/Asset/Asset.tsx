@@ -11,9 +11,18 @@ import styles from './styles';
 const AssetScreen = ({ componentId }: { componentId: string }) => {
   const dispatch = useDispatch<Dispatch>();
   const asset = useReduxState(state => state.assets.selectedAsset);
+  const favorites = useReduxState(state => state.favorites.favorites);
+
+  const isFavorite = asset?.id ? favorites?.includes(asset) : false;
+
   // WIP
   const favorite = () => {
-    dispatch;
+    if (!asset) return;
+    if (isFavorite) {
+      dispatch.favorites.removeFavorite(asset);
+    } else {
+      dispatch.favorites.addFavorite(asset);
+    }
   };
   const goBack = async () => {
     await Navigation.pop(componentId);
@@ -22,7 +31,7 @@ const AssetScreen = ({ componentId }: { componentId: string }) => {
   return (
     <View style={styles.container}>
       <Button title="Go Back" onPress={goBack} />
-      <Button title="Favorite" onPress={favorite} />
+      <Button title={`favorite: ${isFavorite}`} onPress={favorite} />
       <Text>{asset?.name}</Text>
     </View>
   );
