@@ -17,6 +17,7 @@
     "@rematch/persist": "^2.1.2",
     "@rematch/select": "^3.1.2",
     "@rematch/updated": "^2.1.2",
+    "@types/react-native-vector-icons": "^6.4.11",
     "@types/redux-logger": "^3.0.9",
     "axios": "^0.27.2",
     "immer": "^9.0.15",
@@ -26,6 +27,7 @@
     "react-native-config": "^1.4.6",
     "react-native-gesture-handler": "^2.5.0",
     "react-native-navigation": "^7.30.0-alpha",
+    "react-native-vector-icons": "^9.2.0",
     "react-redux": "^8.0.2",
     "redux": "^4.2.0",
     "redux-logger": "^3.0.6"

@@ -6,6 +6,7 @@ export interface Asset {
     category: string;
     consensus_algorithm: string;
     is_verifies: boolean;
+    tagline: string;
   };
   overview: string;
   tagline: string;

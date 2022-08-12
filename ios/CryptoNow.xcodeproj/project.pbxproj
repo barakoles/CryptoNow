@@ -14,6 +14,9 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		7699B88040F8A987B510C191 /* libPods-CryptoNow-CryptoNowTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-CryptoNow-CryptoNowTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		5862406739134255B7409690 /* ProximaNova-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1AAF72D075154E51B5D83849 /* ProximaNova-Bold.otf */; };
+		8D511876C1754C17829E73AA /* ProximaNova-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 840E0DECC7AD4AE69DDFFE4B /* ProximaNova-Regular.otf */; };
+		4C15BA483DAF41E2AEA6EB66 /* PoetsenOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B36EF58B4A8C4074A620C57E /* PoetsenOne-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +40,24 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = CryptoNow/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = CryptoNow/main.m; sourceTree = "<group>"; };
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-CryptoNow-CryptoNowTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CryptoNow-CryptoNowTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B43ADC328A6E6A9009C106E /* Fontisto.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Fontisto.ttf; sourceTree = "<group>"; };
+		1B43ADC428A6E6A9009C106E /* Octicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Octicons.ttf; sourceTree = "<group>"; };
+		1B43ADC528A6E6A9009C106E /* Feather.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Feather.ttf; sourceTree = "<group>"; };
+		1B43ADC628A6E6A9009C106E /* Entypo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Entypo.ttf; sourceTree = "<group>"; };
+		1B43ADC728A6E6A9009C106E /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome5_Brands.ttf; sourceTree = "<group>"; };
+		1B43ADC828A6E6A9009C106E /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialCommunityIcons.ttf; sourceTree = "<group>"; };
+		1B43ADC928A6E6A9009C106E /* AntDesign.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AntDesign.ttf; sourceTree = "<group>"; };
+		1B43ADCA28A6E6A9009C106E /* Foundation.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Foundation.ttf; sourceTree = "<group>"; };
+		1B43ADCB28A6E6A9009C106E /* Ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ionicons.ttf; sourceTree = "<group>"; };
+		1B43ADCC28A6E6A9009C106E /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome5_Solid.ttf; sourceTree = "<group>"; };
+		1B43ADCD28A6E6A9009C106E /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome5_Regular.ttf; sourceTree = "<group>"; };
+		1B43ADCE28A6E6A9009C106E /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
+		1B43ADCF28A6E6A9009C106E /* Zocial.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Zocial.ttf; sourceTree = "<group>"; };
+		1B43ADD028A6E6A9009C106E /* EvilIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = EvilIcons.ttf; sourceTree = "<group>"; };
+		1B43ADD128A6E6A9009C106E /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SimpleLineIcons.ttf; sourceTree = "<group>"; };
+		1B43ADD228A6E6A9009C106E /* MaterialIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialIcons.ttf; sourceTree = "<group>"; };
+		1B43ADE328A6E738009C106E /* ProximaNova-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "ProximaNova-Bold.otf"; path = "../../../../chario/assets/fonts/ProximaNova-Bold.otf"; sourceTree = "<group>"; };
+		1B43ADE528A6E827009C106E /* ProximaNova-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Bold.otf"; sourceTree = SOURCE_ROOT; };
 		3B4392A12AC88292D35C810B /* Pods-CryptoNow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoNow.debug.xcconfig"; path = "Target Support Files/Pods-CryptoNow/Pods-CryptoNow.debug.xcconfig"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-CryptoNow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoNow.release.xcconfig"; path = "Target Support Files/Pods-CryptoNow/Pods-CryptoNow.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-CryptoNow-CryptoNowTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoNow-CryptoNowTests.debug.xcconfig"; path = "Target Support Files/Pods-CryptoNow-CryptoNowTests/Pods-CryptoNow-CryptoNowTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -44,6 +65,9 @@
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = CryptoNow/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-CryptoNow-CryptoNowTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoNow-CryptoNowTests.release.xcconfig"; path = "Target Support Files/Pods-CryptoNow-CryptoNowTests/Pods-CryptoNow-CryptoNowTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		1AAF72D075154E51B5D83849 /* ProximaNova-Bold.otf */ = {isa = PBXFileReference; name = "ProximaNova-Bold.otf"; path = "../src/assets/fonts/ProximaNova-Bold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		840E0DECC7AD4AE69DDFFE4B /* ProximaNova-Regular.otf */ = {isa = PBXFileReference; name = "ProximaNova-Regular.otf"; path = "../src/assets/fonts/ProximaNova-Regular.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B36EF58B4A8C4074A620C57E /* PoetsenOne-Regular.ttf */ = {isa = PBXFileReference; name = "PoetsenOne-Regular.ttf"; path = "../src/assets/fonts/PoetsenOne-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +120,32 @@
 			name = CryptoNow;
 			sourceTree = "<group>";
 		};
+		1B43ADC228A6E6A9009C106E /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				1B43ADC328A6E6A9009C106E /* Fontisto.ttf */,
+				1B43ADE328A6E738009C106E /* ProximaNova-Bold.otf */,
+				1B43ADC428A6E6A9009C106E /* Octicons.ttf */,
+				1B43ADC528A6E6A9009C106E /* Feather.ttf */,
+				1B43ADE528A6E827009C106E /* ProximaNova-Bold.otf */,
+				1B43ADC628A6E6A9009C106E /* Entypo.ttf */,
+				1B43ADC728A6E6A9009C106E /* FontAwesome5_Brands.ttf */,
+				1B43ADC828A6E6A9009C106E /* MaterialCommunityIcons.ttf */,
+				1B43ADC928A6E6A9009C106E /* AntDesign.ttf */,
+				1B43ADCA28A6E6A9009C106E /* Foundation.ttf */,
+				1B43ADCB28A6E6A9009C106E /* Ionicons.ttf */,
+				1B43ADCC28A6E6A9009C106E /* FontAwesome5_Solid.ttf */,
+				1B43ADCD28A6E6A9009C106E /* FontAwesome5_Regular.ttf */,
+				1B43ADCE28A6E6A9009C106E /* FontAwesome.ttf */,
+				1B43ADCF28A6E6A9009C106E /* Zocial.ttf */,
+				1B43ADD028A6E6A9009C106E /* EvilIcons.ttf */,
+				1B43ADD128A6E6A9009C106E /* SimpleLineIcons.ttf */,
+				1B43ADD228A6E6A9009C106E /* MaterialIcons.ttf */,
+			);
+			name = Fonts;
+			path = "../node_modules/react-native-vector-icons/Fonts";
+			sourceTree = "<group>";
+		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -116,12 +166,14 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				1B43ADC228A6E6A9009C106E /* Fonts */,
 				13B07FAE1A68108700A75B9A /* CryptoNow */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* CryptoNowTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				B9283F9C9744428E9A93AC94 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -147,6 +199,17 @@
 			);
 			path = Pods;
 			sourceTree = "<group>";
+		};
+		B9283F9C9744428E9A93AC94 /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				1AAF72D075154E51B5D83849 /* ProximaNova-Bold.otf */,
+				840E0DECC7AD4AE69DDFFE4B /* ProximaNova-Regular.otf */,
+				B36EF58B4A8C4074A620C57E /* PoetsenOne-Regular.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -244,6 +307,9 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				5862406739134255B7409690 /* ProximaNova-Bold.otf in Resources */,
+				8D511876C1754C17829E73AA /* ProximaNova-Regular.otf in Resources */,
+				4C15BA483DAF41E2AEA6EB66 /* PoetsenOne-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
