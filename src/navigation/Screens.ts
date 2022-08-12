@@ -1,3 +1,5 @@
 export enum Screens {
-  APP = 'App',
+  ASSET = 'Asset',
+  ASSETS = 'Assets',
+  FAVORITES = 'Favorites',
 }

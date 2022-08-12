@@ -1,6 +1,6 @@
 import { LayoutRoot, Navigation, Options } from 'react-native-navigation';
+import { BottomTabStacks } from './BottomTabStacks';
 import registerScreens from './registerScreens';
-import { Screens } from './Screens';
 
 const startScreens = () => {
   registerScreens();
@@ -21,20 +21,7 @@ const defaultOptions: Options = {
 
 const layoutRoot: LayoutRoot = {
   root: {
-    stack: {
-      children: [
-        {
-          component: {
-            name: Screens.APP,
-            options: {
-              statusBar: {
-                style: 'dark',
-              },
-            },
-          },
-        },
-      ],
-    },
+    bottomTabs: BottomTabStacks,
   },
 };
 
