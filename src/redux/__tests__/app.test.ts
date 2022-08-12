@@ -1,9 +1,9 @@
 import { models, RootModel } from '@redux/models';
 import { init } from '@rematch/core';
 
-describe('auth store', () => {
-  describe('[auth] reducer', () => {
-    it('incrementAsync effect should increment given a payload', async () => {
+describe('app store', () => {
+  describe('[app] reducer', () => {
+    it('setFirstTime effect should change', async () => {
       const store = init<RootModel>({
         models,
       });

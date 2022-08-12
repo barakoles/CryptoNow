@@ -9,6 +9,7 @@ module.exports = {
       rules: {
         '@typescript-eslint/no-shadow': ['error'],
         'no-shadow': 'off',
+        curly: 'off',
         'no-undef': 'off',
       },
     },
