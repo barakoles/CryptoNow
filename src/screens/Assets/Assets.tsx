@@ -36,9 +36,6 @@ const AssetsScreen = ({ componentId }: { componentId: string }) => {
   useEffect(() => {
     getAssets();
   }, []);
-  useEffect(() => {
-    console.log(assets);
-  }, [assets]);
 
   return (
     <View style={styles.container}>

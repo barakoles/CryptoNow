@@ -6,6 +6,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
+    paddingHorizontal: 20,
   },
   card: {
     width: '90%',
@@ -16,13 +17,13 @@ const styles = StyleSheet.create({
     shadowOffset: { height: 1, width: 0 },
     shadowOpacity: 0.15,
     shadowRadius: 5,
+    marginBottom: marginSizes.big,
   },
   backButton: {
     height: 80,
     width: 60,
     justifyContent: 'center',
     alignItems: 'center',
-
     position: 'absolute',
     top: 0,
     left: 0,
@@ -43,6 +44,10 @@ const styles = StyleSheet.create({
     top: 0,
     right: 0,
     zIndex: 2,
+  },
+  chart: {
+    marginVertical: marginSizes.big,
+    borderRadius: 16,
   },
 });
 

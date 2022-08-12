@@ -1,14 +1,15 @@
-import { View, Text } from 'react-native';
+import { View, Text, Dimensions, TouchableOpacity } from 'react-native';
 import React from 'react';
 import { Navigation } from 'react-native-navigation';
 import { useDispatch } from 'react-redux';
 import Icon from 'react-native-vector-icons/Ionicons';
-import { TouchableOpacity } from 'react-native';
+import { LineChart } from 'react-native-chart-kit';
 
 import { Dispatch } from '@redux/store';
 import { useReduxState } from '@hooks/useReduxState';
-import styles from './styles';
 import { themeColors } from '@shared/vars';
+
+import styles from './styles';
 
 const AssetScreen = ({ componentId }: { componentId: string }) => {
   const dispatch = useDispatch<Dispatch>();
@@ -17,8 +18,7 @@ const AssetScreen = ({ componentId }: { componentId: string }) => {
 
   const isFavorite = asset?.id ? favorites?.includes(asset) : false;
 
-  // WIP
-  const favorite = () => {
+  const toggleFavorite = () => {
     if (!asset) return;
     if (isFavorite) {
       dispatch.favorites.removeFavorite(asset);
@@ -35,7 +35,7 @@ const AssetScreen = ({ componentId }: { componentId: string }) => {
       <TouchableOpacity onPress={goBack} style={styles.backButton}>
         <Icon name={'ios-arrow-back'} size={25} color={themeColors.main} />
       </TouchableOpacity>
-      <TouchableOpacity onPress={favorite} style={styles.favoriteButton}>
+      <TouchableOpacity onPress={toggleFavorite} style={styles.favoriteButton}>
         {isFavorite ? (
           <Icon name={'heart'} size={25} color={themeColors.main} />
         ) : (
@@ -68,6 +68,48 @@ const AssetScreen = ({ componentId }: { componentId: string }) => {
             </Text>
           </Text>
         </View>
+
+        {asset && (
+          <LineChart
+            data={{
+              labels: ['Yesterday', 'Today'],
+              datasets: [
+                {
+                  data: [
+                    asset?.metrics.market_data.price_usd -
+                      asset?.metrics.market_data.price_usd *
+                        asset?.metrics.market_data
+                          .percent_change_usd_last_24_hours *
+                        0.01,
+                    asset?.metrics.market_data.price_usd,
+                  ],
+                },
+              ],
+            }}
+            width={(4.5 * Dimensions.get('window').width) / 5} // from react-native
+            height={220}
+            yAxisLabel="$"
+            yAxisInterval={1}
+            chartConfig={{
+              backgroundColor: themeColors.main,
+              backgroundGradientFrom: themeColors.main,
+              backgroundGradientTo: themeColors.secondary,
+              decimalPlaces: 2,
+              color: (opacity = 1) => `rgba(255, 255, 255, ${opacity})`,
+              labelColor: (opacity = 1) => `rgba(255, 255, 255, ${opacity})`,
+              style: {
+                borderRadius: 16,
+              },
+              propsForDots: {
+                r: '6',
+                strokeWidth: '2',
+                stroke: themeColors.green,
+              },
+            }}
+            bezier
+            style={styles.chart}
+          />
+        )}
       </View>
     </>
   );
