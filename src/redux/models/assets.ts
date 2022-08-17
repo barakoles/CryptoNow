@@ -20,12 +20,27 @@ const initialState: AssetsState = {
         category: '',
         consensus_algorithm: '',
         is_verifies: false,
+        tagline: '',
       },
       overview: '',
       tagline: '',
       technology: '',
       slug: '',
       symbol: '',
+      metrics: {
+        all_time_high: {
+          price: 0,
+          percent_down: 0,
+        },
+        market_data: {
+          percent_change_btc_last_24_hours: 0,
+          percent_change_eth_last_24_hours: 0,
+          percent_change_usd_last_24_hours: 0,
+          price_btc: 0,
+          price_eth: 0,
+          price_usd: 0,
+        },
+      },
     },
   ],
   currentPage: 1,
@@ -57,7 +72,7 @@ export const assets = createModel<RootModel>()({
         dispatch.assets.incrementPage(1);
         return res.data.data;
       } catch (error) {
-        console.log(error);
+        dispatch.errors.onError(error);
       }
     },
   }),

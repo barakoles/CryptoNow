@@ -1,4 +1,4 @@
-import { marginSizes } from '@shared/vars';
+import { marginSizes, themeColors } from '@shared/vars';
 import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
@@ -12,6 +12,7 @@ const styles = StyleSheet.create({
     width: '100%',
     padding: marginSizes.big,
   },
+  errorMessage: { textAlign: 'center', color: themeColors.main },
 });
 
 export default styles;

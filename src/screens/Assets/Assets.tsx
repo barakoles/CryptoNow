@@ -1,5 +1,5 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import { View, ActivityIndicator } from 'react-native';
+import { View, ActivityIndicator, Text } from 'react-native';
 import React, { useCallback, useEffect } from 'react';
 import { Navigation } from 'react-native-navigation';
 import { FlatList } from 'react-native-gesture-handler';
@@ -16,6 +16,7 @@ import styles from './styles';
 const AssetsScreen = ({ componentId }: { componentId: string }) => {
   const dispatch = useDispatch<Dispatch>();
   const isLoading = useReduxState(state => state.loading.effects.assets);
+  const error = useReduxState(state => state.errors.error);
 
   const [assets, setAssets] = React.useState<Asset[]>([]);
   const goToAsset = (payload: Asset) => {
@@ -50,6 +51,13 @@ const AssetsScreen = ({ componentId }: { componentId: string }) => {
         onEndReachedThreshold={0.5}
         ListFooterComponent={() => {
           if (!isLoading) return null;
+          if (error?.name)
+            return (
+              <Text style={styles.errorMessage}>
+                Error while retrieving assets.{'\n'}
+                Do you have internet connection?
+              </Text>
+            );
           return <ActivityIndicator />;
         }}
       />
